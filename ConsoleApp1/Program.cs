@@ -37,16 +37,16 @@ internal class Program
             throw new ArgumentException("The array cannot be null or empty.");
         }
 
-        int maxInt = numbers[0]; 
+        int maximum = numbers[0]; 
         foreach (int number in numbers)
         {
-            if (number > maxInt)
+            if (number > maximum)
             {
-                maxInt = number;
+                maximum = number;
             }
         }
 
-        return maxInt;
+        return maximum;
     }
 }
 
